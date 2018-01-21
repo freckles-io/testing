@@ -51,9 +51,9 @@
   set_fact:
     nginx_vhost_http:
       - listen: "{{ static_website_port }}"
-        server_name: "{{ seafile_domain }}"
-        return: "301 https://{{ seafile_domain }}$request_uri"
-        filename: "{{ seafile_domain }}.80.conf"
+        server_name: "{{ static_website_domain }}"
+        return: "301 https://{{ static_website_domain }}$request_uri"
+        filename: "{{ static_website_domain }}.80.conf"
   when: request_https_cert
 
 # webserver
