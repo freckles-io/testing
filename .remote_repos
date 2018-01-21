@@ -1,0 +1,1 @@
+roles/services/web-servers/nginx/geerlingguy.nginx=https://github.com/freckles-io-external/ansible-role-nginx.git
