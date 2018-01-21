@@ -32,7 +32,7 @@
 
 - name: "[setting https related stuff]"
   set_fact:
-    nginx_https_option_1: "ssl http2"
+    nginx_https_options_1: "ssl http2"
     nginx_https_options_2: |
       ssl_certificate      /etc/letsencrypt/live/{{ static_website_domain }}/fullchain.pem;
       ssl_certificate_key  /etc/letsencrypt/live/{{ static_website_domain }}/privkey.pem;
