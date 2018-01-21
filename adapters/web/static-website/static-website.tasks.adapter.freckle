@@ -1,0 +1,22 @@
+- name: "[setting variables]"
+  set_fact:
+    static_website_port: 9090
+    static_website_domain: 127.0.0.1
+
+# webserver
+- name: "[setting webserver vars]"
+  set_fact:
+    nginx_remove_default_vhost: true
+    nginx_vhosts:
+      - listen: "{{ static_website_port }}"
+        server_name: "{{ static_website_domain }}"
+        root: "{{ freckle_path }}"
+        filename: "{{ freckle_folder_name }}.{{ static_website_port }}.conf"
+    nginx_remove_default_vhost: true
+
+- name: installing and configuring nginx
+  include_role:
+    name: geerlingguy.nginx
+  vars:
+    nginx_user: "{{ freckle_owner }}"
+  become: true

@@ -1,8 +1,9 @@
 doc:
   help: Installs and configures a webserver to publish a static website
   short_help: installs and configures webserver to server a static website
-# role-dependencies:
-#   - <role_author>.<role_name>
+
+role-dependencies:
+  - geerlingguy.nginx
 #   - ...
 # args:
 #   test_arg:
