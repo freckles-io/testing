@@ -6,6 +6,7 @@
       - pycrypto-related:
           pkgs:
             debian:
+              - python3-dev
               - libssl-dev
               - libffi-dev
               - libsqlite3-dev
