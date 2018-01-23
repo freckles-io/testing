@@ -1,18 +1,18 @@
 - python-dev:
-    # python_version: 3
-    # python_dev_requirements_files:
-    #   - requirements_dev.txt
-    # packages:
-    #   - pycrypto-related:
-    #       pkgs:
-    #         debian:
-    #           - libssl-dev
-    #           - libffi-dev
-    #           - libsqlite3-dev
-    #         conda:
-    #           - cryptography
-    #           - pycrypto
-    #         other: omit
+    python_version: 3
+    python_dev_requirements_files:
+      - requirements_dev.txt
+    packages:
+      - pycrypto-related:
+          pkgs:
+            debian:
+              - libssl-dev
+              - libffi-dev
+              - libsqlite3-dev
+            conda:
+              - cryptography
+              - pycrypto
+            other: omit
 # - vagrant-dev:
-    # vagrant_dev_providers:
-    #    - virtualbox
+#     vagrant_dev_providers:
+#       - virtualbox
