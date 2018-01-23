@@ -13,6 +13,8 @@
             conda:
               - cryptography
               - pycrypto
+            homebrew:
+              - python3
             other: omit
 # - vagrant-dev:
 #     vagrant_dev_providers:
