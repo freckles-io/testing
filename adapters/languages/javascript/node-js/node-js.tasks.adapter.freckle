@@ -1,0 +1,17 @@
+# TODO: more options, global vs user install, etc.
+
+- name: "[setting variables]"
+  set_fact:
+    nodejs_version: "{{ freckle_folder_vars.nodejs_version | default(omit) }}"
+    #nodejs_install_npm_user: "{{ freckle_folder_vars.owner }}"
+    nodejs_nvm_rc_files: "{{ freckle_folder_vars.nodejs_rc_files | default([]) }}"
+
+- name: "[setting rc vars]"
+  set_fact:
+    nodejs_add_source_nvm_sh: true
+    nodejs_add_nvm_node_use: true
+  when: nodejs_nvm_rc_files
+
+- name: "starting node-js install"
+  include_role:
+    name: "freckles-io.install-nodejs"

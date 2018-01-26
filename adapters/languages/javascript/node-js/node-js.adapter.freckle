@@ -1,0 +1,33 @@
+doc:
+  help: |
+    Installs nvm, npm and nodejs.
+
+    By default, installs packages globally, and sets the global directory to
+    '$HOME/.npm-global'
+
+    Creates symlinks for all those in $HOME/.local/bin
+
+  short_help: installs nvm, npm and nodejs
+
+available_vars:
+
+  nodejs_version:
+    help: "the (default) version of node-js to install"
+  nodejs_rc_files:
+    help: "a list of rc files (.bashrc, .zshrc, ...) to add a line that sources nvm.sh and activates the latest nodejs install"
+
+role-dependencies:
+  - freckles-io.install-nodejs
+
+# args:
+#   test_arg:
+#     arg_name: test-arg
+#     help: example help text for arg
+#     type: str  # (optional)
+#     multiple: false  # (optional)
+#     required: false  # (optional)
+#     default: default-string  # (optional)
+#     metavar: TEST_ARG  # (optional)
+#     is_flag: false  # (optional)
+#     is_var: true  # (optional)
+#     is_argument: false  # (optional)
