@@ -1,3 +1,1 @@
-roles/services/web-servers/nginx/geerlingguy.nginx=https://github.com/freckles-io-external/ansible-role-nginx.git
-roles/web/letsencrypt/thefinn93.letsencrypt=https://github.com/freckles-io-external/ansible-letsencrypt.git
 blueprints/languages/python/python-project=https://github.com/freckles-io-external/cookiecutter-pypackage.git
