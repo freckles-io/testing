@@ -1,1 +1,2 @@
 blueprints/languages/python/python-project=https://github.com/freckles-io-external/cookiecutter-pypackage.git
+roles/package-managers/npm/freckles-io.install-nodejs=https://github.com/freckles-io/freckles-io.install-nodejs.git
